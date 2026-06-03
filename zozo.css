@@ -1,0 +1,928 @@
+/*
+Free to use CSS template by Katie (#106445).
+This code may be altered, edited, or re-uploaded. 
+This template may be used to create paid codes (pre-mades and commissions).
+Please do NOT remove this credit, unless your coding becomes unrecognizable from this one! 
+*/
+
+/* FONT (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@400;600;700&display=swap');
+
+/* BACKGROUND */
+
+body {
+	background:
+		radial-gradient(circle at 12% 18%, rgba(255, 142, 211, 0.18) 0%, transparent 28%),
+		radial-gradient(circle at 88% 22%, rgba(119, 221, 255, 0.14) 0%, transparent 30%),
+		radial-gradient(circle at 50% 88%, rgba(255, 244, 161, 0.09) 0%, transparent 34%),
+		linear-gradient(135deg, #140a18 0%, #1b1026 38%, #08070d 72%, #120713 100%);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Quicksand', sans-serif;
+	color: #f8d9ff;
+}
+
+/* TWO SIDE-BY-SIDE HOVER EXPAND BOXES */
+
+.duoboxwrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 18px;
+	margin: 15px auto;
+	width: 95%;
+}
+
+.duohoverscroll {
+	flex: 1 1 45%;
+	min-width: 280px;
+	height: 90px;
+	overflow: hidden;
+	padding: 14px 16px;
+	background: linear-gradient(180deg, rgba(42, 24, 48, 0.92), rgba(18, 13, 26, 0.88));
+	border: 1px solid rgba(255, 166, 218, 0.22);
+	border-radius: 16px;
+	color: #f9eaff;
+	box-shadow:
+		0 0 0 1px rgba(170, 244, 255, 0.05),
+		0 0 18px rgba(7, 3, 12, 0.45),
+		0 0 24px rgba(255, 105, 180, 0.08);
+	transition: height 0.7s ease, box-shadow 0.5s ease, border 0.5s ease, transform 0.5s ease;
+}
+
+.duohoverscroll:hover {
+	height: 220px;
+	overflow-y: auto;
+	border: 1px solid rgba(134, 236, 255, 0.35);
+	box-shadow:
+		0 0 0 1px rgba(255, 213, 247, 0.10),
+		0 0 16px rgba(255, 92, 184, 0.18),
+		0 0 26px rgba(101, 218, 255, 0.14),
+		0 0 38px rgba(17, 4, 25, 0.60);
+	transform: translateY(-2px);
+}
+
+.duohoverscroll h3 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	text-align: center;
+	font-size: 20px !important;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	color: #ffd6f5 !important;
+	text-shadow:
+		0 0 8px rgba(255, 92, 184, 0.35),
+		0 0 14px rgba(105, 226, 255, 0.18),
+		2px 2px 0 rgba(14, 6, 22, 0.75);
+}
+
+.duohoverscroll p {
+	margin: 0;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #f2e7ff;
+}
+
+.duohoverscroll::-webkit-scrollbar {
+	width: 8px;
+}
+
+.duohoverscroll::-webkit-scrollbar-track {
+	background: rgba(14, 7, 22, 0.92);
+	border-radius: 10px;
+}
+
+.duohoverscroll::-webkit-scrollbar-thumb {
+	background: linear-gradient(#ff9fdc, #86ecff);
+	border-radius: 10px;
+}
+
+/* MOBILE STACK */
+@media only screen and (max-width: 767px) {
+	.duoboxwrap {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.duohoverscroll {
+		flex: 1 1 100%;
+		min-width: 100%;
+	}
+}
+
+/* MAIN PANEL */
+
+/* RIGHT SIDE */
+.container.main {
+	background: rgba(11, 5, 17, 0.72);
+	border: 1px solid rgba(255, 167, 232, 0.18);
+	box-shadow:
+		0 0 22px rgba(0, 0, 0, 0.85),
+		0 0 32px rgba(255, 105, 206, 0.18),
+		inset 0 0 35px rgba(0, 0, 0, 0.55);
+	border-radius: 0px
+}
+
+/* LEFT SIDE */
+.col-md-9 {
+	background: none;
+        border-right: none
+}
+
+/* TOPBAR ("Welcome back, ___") */
+
+.topbar {
+	background: rgba(20, 8, 31, 0.78);
+	border: none;
+	border-top: none;
+	color: #ffe6fb;
+	border-radius: 0px;
+	box-shadow: inset 0 -1px 0 rgba(123, 229, 255, 0.25);
+}
+
+/* NAVBAR (Den/Crossroads/Etc.) */
+
+.navbar {
+	background: rgba(20, 8, 31, 0.82);
+	border-bottom: 1px solid rgba(255, 169, 232, 0.22);
+	color: #ffe6fb;
+	border-radius: 0px
+}
+
+/* NAVBAR BUTTON TEXT COLOR */
+
+.navbar li a {
+	color: #ffd6f5 !important;
+	font-family: 'Creepster', cursive !important;
+	letter-spacing: 1px;
+	text-shadow:
+		0 0 5px rgba(255, 92, 184, 0.45),
+		0 0 10px rgba(134, 236, 255, 0.22);
+	transition:
+		opacity 0.6s ease,
+		filter 0.6s ease,
+		letter-spacing 0.6s ease,
+		color 0.6s ease;
+}
+
+/* NAVBAR BUTTON HOVER */
+
+.navbar li a:hover {
+	background: rgba(25, 10, 30, 0.55) !important;
+	border-bottom: none;
+	color: rgba(255,255,255,0) !important;
+	letter-spacing: 6px;
+	filter: blur(5px);
+	text-shadow:
+		0 0 12px rgba(255, 92, 184, 0.35),
+		0 0 18px rgba(134, 236, 255, 0.25);
+}
+
+/* BREADCRUMB (Home / Den) */
+
+.breadcrumb {
+	background: rgba(13, 6, 22, 0.82) !important;
+        border: none;
+	border-radius: 0px;
+	box-shadow: 0 0 12px rgba(255, 132, 217, 0.14);
+}
+
+/* BREADCRUMB TEXT */
+
+.breadcrumb .active {
+	color: #ffe1f9
+}
+
+/* CSS CREDIT */
+
+.breadcrumb::after {
+        content: "Template by Katie (#106445) - Design by Frag (#416741)";
+        color: #ffc9f1;
+        position: absolute;
+        right: 13%; /* (This may need adjusting) */
+        z-index: 100;
+        text-shadow: 0 0 7px rgba(255, 132, 217, 0.9);
+    }
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%
+        }
+    }
+
+/* BOOKMARK BUTTON */
+
+input.floatright, input.floatright:hover {
+	background: rgba(24, 8, 33, 0.84) !important;
+        border: 1px solid rgba(255, 180, 238, 0.22) !important;
+	border-radius: 0px;
+	color: #ffe6fb !important;    
+}
+
+/* SWITCH ACCOUNT BUTTON */
+
+button.button, button.button:hover {
+	background: rgba(24, 8, 33, 0.84);
+        border: 1px solid rgba(255, 180, 238, 0.22) !important;
+	border-radius: 0px;
+        text-shadow: none !important;
+	color: #ffe6fb !important
+}
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+	background: linear-gradient(90deg, rgba(28, 10, 39, 0.88), rgba(35, 11, 28, 0.82)) !important;
+	border: 1px solid rgba(255, 132, 217, 0.22);
+	color: #ffe6fb;
+	border-radius: 0px !important;
+	box-shadow: 0 0 18px rgba(255, 70, 166, 0.14);
+}
+
+/* BIGGEST HEADER ("___"'s DEN) */
+
+h1 {
+	color: #ffe1f9;
+	font-size: 90px;
+	text-align: center;
+        font-family: 'Creepster', cursive;
+	letter-spacing: 3px;
+	text-shadow:
+		0 0 6px #ff8dda,
+		0 0 12px #71e7ff,
+		0 0 22px rgba(0, 0, 0, 1),
+		3px 3px 0 rgba(0, 0, 0, 0.9);
+	animation: zozoSmile 5.5s infinite ease-in-out;
+}
+
+
+/* MEDIUM HEADER */
+
+h2 {
+	color: #bdf3ff;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Creepster', cursive;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px rgba(113, 231, 255, 0.75), 0 0 18px rgba(255, 95, 194, 0.28);
+}
+
+
+/* SMALL HEADER */
+
+h3 {
+	color: #ffc9f1 !important;
+	font-size: 14px !important;
+	text-shadow: 0 0 7px rgba(255, 119, 210, 0.65);
+}
+
+/* RIGHT SIDE PANEL HEADER */
+
+.sidebar h3 {
+	color: #ffe1f9 !important;
+        font-size: 26px !important;
+        font-family: 'Creepster', cursive;
+	letter-spacing: 2px;
+	text-shadow:
+		0 0 8px rgba(255, 122, 213, 0.85),
+		0 0 13px rgba(126, 231, 255, 0.55),
+		2px 2px 0 #050307;
+}
+
+/* RIGHT SIDE PANELS */
+.panel {
+	background: rgba(15, 6, 24, 0.78) !important;
+	box-shadow:
+		0 0 13px rgba(0, 0, 0, 0.85) !important,
+		0 0 18px rgba(255, 116, 211, 0.12) !important;
+	border: 1px solid rgba(255, 191, 244, 0.14) !important;
+	color: #ffe6fb !important;
+	border-radius: 0px
+}
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+	background: rgba(9, 4, 15, 0.82);
+	color: #ffe6fb !important;
+	border-radius: 0px !important;
+	border: 1px solid rgba(255, 191, 244, 0.16);
+}
+
+/* ENERGY BAR COLOR */
+.progress-bar {
+	background: linear-gradient(90deg, rgba(255, 128, 211, 0.72), rgba(116, 229, 255, 0.72), rgba(255, 238, 148, 0.62));
+	color: #120713 !important;
+	border-radius: 0px !important;
+	text-shadow: none !important;
+}
+
+/* ENERGY BAR TEXT */
+.progress div {
+	color: #ffffff !important
+}
+
+/* Comment Box */
+
+
+			#commentBox {
+                		background: rgba(12, 5, 20, 0.82);
+				border: 1px solid rgba(255, 191, 244, 0.25);
+				border-radius: 10px;
+				padding: 0px;
+				margin-bottom: 5px;
+				height: 300px;
+				overflow: auto;
+				box-shadow: inset 0 0 22px rgba(0, 0, 0, 0.65);
+			}
+			#makeComment {
+				margin-top: 5px;
+			}
+			#comment {
+				text-align: left;
+				width: 85%;
+			}
+			.comment {
+				width: 100%;
+				text-align: left;
+				padding: 4px 7px;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				gap: 10px;
+			}
+			.comment:nth-child(even) {
+				background-color: rgba(255, 133, 214, .13);
+                		color: #ffe6fb
+			}
+            .comment:nth-child(odd) {
+				background-color: rgba(116, 229, 255,0.12);
+                		color: #f8eaff
+			}
+			.commentTag {
+				width: 40px; 
+				height: 40px; 
+				border-radius: 4px;
+			}
+			.comment .commentText {
+				flex-grow: 4;
+			}
+			.comment .bad {
+				padding: 2px 7px !important;
+				font-size: 10px !important;
+			}
+
+/* CHAT */
+
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+	background: rgba(20, 7, 31, 0.76) !important;
+        color: #ffe6fb !important;
+	border: none !important
+}
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+	background: rgba(27, 9, 32, 0.76) !important;
+        color: #ffe6fb !important;
+	border: none !important
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+	background: rgba(255, 128, 211, 0.22) !important;
+        color: #ffffff !important;
+	border: 1px solid rgba(255, 191, 244, 0.22) !important
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+	color: #bdf3ff !important;
+}
+
+div#chatMessageContainer {
+	border: none !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	background: rgba(17, 6, 26, 0.88) !important;
+        color: #ffe6fb !important;
+	border: 1px solid rgba(255, 191, 244, 0.18) !important
+}
+
+/* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
+
+
+/* PANEL BACKGROUND COLOR */
+
+.table {
+	background: rgba(13, 5, 22, 0.78);
+	border: none !important;
+	border-collapse: separate;
+	border-radius: 0px;
+	color: #ffe6fb;
+}
+
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+
+.top,
+.bottom,
+th {
+	background: linear-gradient(90deg, rgba(255, 129, 212, 0.35), rgba(119, 226, 255, 0.22), rgba(16, 7, 25, 0.86)) !important;
+	color: #ffffff !important;
+	border-radius: 0px;
+	text-shadow: 0 0 8px rgba(255, 122, 213, 0.65);
+}
+
+td.bottom a {
+        text-decoration: none !important
+}
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+
+.inner-table .left {
+	background: rgba(255, 157, 225, 0.18) !important;
+        color: #ffe6fb;
+	border-radius: 0px;
+	text-shadow: 0 0 6px rgba(255, 120, 211, 0.55);
+}
+
+
+/* Color behind the number of all of the things above */
+
+.inner-table .right {
+	background: rgba(7, 4, 12, 0.24);
+	border-radius: 0px !important;
+	color: #f8eaff;
+}
+
+td.right {
+	border-radius: 0px !important
+}
+
+/* IGNORE */
+.right_odd {
+	background: none !important
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
+
+.cave-grid,
+.mound-grid {
+	background: rgba(12, 5, 20, 0.8);
+	border: 1px solid rgba(255, 191, 244, 0.18) !important;
+	border-radius: 0px !important;
+	position: relative;
+	overflow: hidden;
+	box-shadow:
+		0 0 12px rgba(0, 0, 0, 0.8),
+		0 0 16px rgba(255, 108, 205, 0.10);
+	transition: .55s ease;
+}
+
+.cave-grid::before,
+.mound-grid::before {
+	content: "";
+	position: absolute;
+	inset: -40%;
+	background:
+		radial-gradient(circle, rgba(255, 139, 216, 0.22) 0%, transparent 32%),
+		radial-gradient(circle at 80% 20%, rgba(123, 229, 255, 0.17) 0%, transparent 34%);
+	opacity: 0;
+	transform: rotate(0deg);
+	transition: .55s ease;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.cave-grid:hover,
+.mound-grid:hover {
+	transform: translateY(-3px);
+	box-shadow:
+		0 0 16px rgba(0, 0, 0, 0.95),
+		0 0 19px rgba(255, 119, 211, 0.38),
+		0 0 26px rgba(100, 224, 255, 0.18);
+	filter: saturate(1.15);
+}
+
+.cave-grid:hover::before,
+.mound-grid:hover::before {
+	opacity: 1;
+	animation: zozoSpotlight 2.8s linear infinite;
+}
+
+.cave-grid img,
+.mound-grid img {
+	transition: .55s ease;
+	filter: brightness(.82) contrast(1.08) saturate(.9);
+}
+
+.cave-grid:hover img,
+.mound-grid:hover img {
+	filter: brightness(1.08) contrast(1.18) saturate(1.35) drop-shadow(0 0 8px rgba(255, 144, 220, .7));
+	transform: scale(1.035) rotate(-.35deg);
+}
+
+/* FEED ALL, PLAY ALL */
+
+.feature {
+	background: rgba(19, 7, 29, 0.82) !important;
+	color: #ffe6fb !important;
+	border: 1px solid rgba(255, 191, 244, 0.18) !important;
+	border-radius: 0px !important;
+	box-shadow: 0 0 12px rgba(255, 116, 211, 0.10);
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+
+.feature,
+div.left {
+	background: rgba(19, 7, 29, 0.82);
+	border: none;
+	border-radius: 0px !important
+}
+
+/* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
+
+.table .left {
+	background: rgba(18, 7, 28, 0.82);
+        border-radius: 0px;
+	color: #ffe6fb;
+}
+
+/* Color behind the content of the elements listed above */
+
+input,
+select,
+textarea {
+	background: rgba(9, 4, 15, 0.86) !important;
+	border: 1px solid rgba(255, 191, 244, 0.16) !important;
+	border-radius: 0px !important;
+	color: #ffe6fb !important;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.65) !important;
+	text-shadow: none !important
+}
+
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+
+.item-header {
+	background: linear-gradient(90deg, rgba(255, 129, 212, 0.32), rgba(119, 226, 255, 0.22), rgba(16, 7, 25, 0.86)) !important;
+	color: #ffffff  !important;
+	border-radius: 0px !important;
+	text-shadow: 0 0 8px rgba(255, 132, 217, 0.65);
+}
+
+.item {
+	background: rgba(14, 6, 22, 0.82) !important;
+	border: none !important;
+	border-radius: 0px !important;
+	color: #ffe6fb !important;
+}
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+
+div.slider.round /* Background */ {
+	background: #ff85d5 !important
+}
+
+div.slider.round::before /* Circle Part */ {
+	background: #bdf3ff !important
+}
+
+/* Copyright, Terms of Service, CoC, etc. */
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        color: #ffc9f1 !important;
+        text-shadow: 0 0 7px rgba(255, 132, 217, 0.55) !important
+}
+
+/* LINK COLOR */
+
+a:link,
+a:visited {
+	color: #bdf3ff !important;
+	text-shadow: 0 0 6px rgba(123, 229, 255, 0.35);
+}
+
+/* LINK HOVER COLOR */
+
+a:hover {
+	color: #ffb8ea !important;
+	text-shadow: 0 0 9px #ff87d6, 0 0 14px rgba(123, 229, 255, 0.55);
+}
+
+
+/* BOX CONTAINER */
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
+/* BOXES */
+
+.smallbox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 28.4%;
+	overflow: auto;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+.mediumbox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 43.8%;
+	overflow: auto;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+.largebox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 90%;
+	overflow: auto;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+/* HOVER BOXES */
+
+.smallhoverbox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 50px;
+	width: 28.4%;
+	overflow: auto;
+        transition: 3s;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+.smallhoverbox:hover {
+	height: 150px;
+	width: 28.4%;
+	background: rgba(29, 8, 34, 0.9);
+	box-shadow: 0 0 22px rgba(255, 119, 211, 0.22);
+}
+
+.mediumhoverbox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 50px;
+	width: 43.8%;
+	overflow: auto;
+        transition: 3s;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+.mediumhoverbox:hover {
+	height: 150px;
+	width: 43.8%;
+	background: rgba(29, 8, 34, 0.9);
+	box-shadow: 0 0 22px rgba(255, 119, 211, 0.22);
+}
+
+.largehoverbox {
+	float: left;
+	background: rgba(13, 5, 22, 0.82);
+	color: #ffe6fb;
+	padding: 10px;
+	border: 1px solid rgba(255, 191, 244, 0.15);
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 90%;
+	overflow: auto;
+        transition: 3s;
+	box-shadow: 0 0 15px rgba(255, 116, 211, 0.10);
+}
+
+.largehoverbox:hover {
+	height: 150px;
+	width: 90%;
+	background: rgba(29, 8, 34, 0.9);
+	box-shadow: 0 0 22px rgba(255, 119, 211, 0.22);
+}
+
+/* SCROLL BAR */
+
+/* WIDTH */
+
+::-webkit-scrollbar {
+	width: 10px
+}
+
+
+/* BACKGROUND */
+
+::-webkit-scrollbar-track {
+	background: #120713
+}
+
+
+/* "THUMB" */
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#ff85d5, #7be5ff, #fff09c);
+	border-radius: 0px
+}
+
+
+/* LION AND USER AVATAR OPACITY */
+
+div#lion_image {
+	opacity: 1
+}
+
+table#player img {
+	opacity: 1
+}
+
+
+/* CIRCULAR LION AND USER AVATAR */
+
+div#lion_image {
+	border-radius: 50% !important;
+	overflow: hidden;
+	margin-top: 15px; /* May need adjusting */
+	margin-left: 12px; /* May need adjusting */
+	box-shadow:
+		0 0 0 2px rgba(255, 191, 244, 0.25),
+		0 0 18px rgba(255, 116, 211, 0.28),
+		0 0 28px rgba(0, 0, 0, 0.85);
+	animation: zozoPulse 4s infinite ease-in-out;
+}
+
+table#player img {
+	border-radius: 50% !important;
+	overflow: hidden;
+	box-shadow:
+		0 0 0 2px rgba(255, 191, 244, 0.22),
+		0 0 16px rgba(123, 229, 255, 0.18);
+}
+
+
+/* LIODEN LOGO TEXT REPLACER */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	display: none !important;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::before {
+	content: "Come Play With Me";
+	font-family: 'Creepster', cursive !important;
+	font-size: 25px;
+	color: #ffd6f5;
+	letter-spacing: 2px;
+	text-shadow:
+		0 0 6px rgba(255, 92, 184, 0.75),
+		0 0 14px rgba(134, 236, 255, 0.45),
+		2px 2px 0 rgba(10, 3, 18, 0.95);
+	transition: opacity 0.8s ease, letter-spacing 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a:hover::before {
+	opacity: 0;
+	letter-spacing: 12px;
+	filter: blur(6px);
+	transform: translateY(-6px);
+}
+
+/* CAVE / MOUND IMAGES */
+
+div.cave-grid>img /* Pregnant Lionesses */ {
+	content: url('https://i.postimg.cc/TTc94wmF/Cave.png') !important
+}
+
+a[href$="CAVE ID"]>div.cave-grid>img {
+	content: url('https://i.postimg.cc/TTc94wmF/Cave.png') !important
+}
+
+a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img /* Pride Overview */ {
+	content: url('https://i.postimg.cc/TTc94wmF/Cave.png') !important
+}
+
+a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img /* Unsorted */ {
+	content: url('https://i.postimg.cc/TTc94wmF/Cave.png') !important
+}
+
+.mound-grid img /* Mound(s) */ {
+	background: url("https://i.postimg.cc/TTc94wmF/Cave.png");
+	width: 0;
+	height: 0;
+	padding-top: 80px;
+	padding-right: 130px
+}
+
+/* SPOOKY TEXT AND CAVE ANIMATIONS */
+
+@keyframes zozoSmile {
+	0%, 100% {
+		transform: translateX(0);
+		filter: none;
+		text-shadow:
+			0 0 6px #ff8dda,
+			0 0 12px #71e7ff,
+			0 0 22px rgba(0, 0, 0, 1),
+			3px 3px 0 rgba(0, 0, 0, 0.9);
+	}
+	47% {
+		transform: translateX(0);
+	}
+	48% {
+		transform: translateX(-1px) skewX(-2deg);
+		text-shadow:
+			2px 0 0 rgba(255, 72, 169, .75),
+			-2px 0 0 rgba(84, 229, 255, .62),
+			0 0 18px rgba(0, 0, 0, 1);
+	}
+	49% {
+		transform: translateX(2px) skewX(2deg);
+	}
+	50% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes zozoSpotlight {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		transform: rotate(360deg) scale(1.04);
+	}
+}
+
+@keyframes zozoPulse {
+	0%, 100% {
+		box-shadow:
+			0 0 0 2px rgba(255, 191, 244, 0.25),
+			0 0 18px rgba(255, 116, 211, 0.28),
+			0 0 28px rgba(0, 0, 0, 0.85);
+	}
+	50% {
+		box-shadow:
+			0 0 0 2px rgba(123, 229, 255, 0.32),
+			0 0 24px rgba(255, 116, 211, 0.42),
+			0 0 34px rgba(0, 0, 0, 0.95);
+	}
+}
+
+/* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
+
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	display: block !important;
+}
+
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
