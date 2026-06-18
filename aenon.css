@@ -28,7 +28,7 @@ body {
     background: linear-gradient(rgba(8, 8, 6, 0.35), rgba(8, 8, 6, 0.55)), url('https://i.postimg.cc/4fCgMBXZ/Aenon-Background.png') center center fixed;
     background-size: cover;
     font-family: 'Spectral', serif;
-    color: var(--aenon-ink);
+    color: var(--aenon-parchment);
 }
 
 /* MAIN PANEL */
