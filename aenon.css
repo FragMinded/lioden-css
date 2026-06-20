@@ -106,7 +106,7 @@ body {
 /* CSS CREDIT */
 
 .breadcrumb::after {
-    content: "Template by Katie (#106445) 🧭 Design by Frag (#416741)";
+    content: "Template by Katie (#106445) - Design by Frag (#416741)";
     color: var(--aenon-parchment);
     position: absolute;
     right: 13%; /* (This may need adjusting) */
