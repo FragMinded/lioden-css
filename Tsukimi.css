@@ -353,6 +353,19 @@ button#label_currentChannel {
 	border-radius: var(--kimi-radius);
 }
 
+/* Codes made by Pandora #144118  
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+
+/* CUSTOM KING TITLE - BEFORE */
+ 
+#about > tbody > tr:nth-child(1) > td > div::before {
+    content:'Titanus';
+    font-size:17px;
+    
+}
+
 /* TABLES */
 
 .table {
