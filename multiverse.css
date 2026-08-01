@@ -167,28 +167,6 @@ button#label_currentChannel {
         0 0 12px rgba(155,140,255,.36);
 }
 
-/* BREADCRUMB */
-.breadcrumb {
-    position: relative;
-    color: var(--muted) !important;
-}
-
-.breadcrumb .active { color: var(--text) !important; }
-
-.breadcrumb::after {
-    content: 'Template by Katie (#106445) · Design by Ko (#416741)';
-    color: #737b97;
-    position: absolute;
-    right: 3%;
-    z-index: 100;
-    font-size: 10px;
-    letter-spacing: .03em;
-}
-
-@media only screen and (max-width: 991px) {
-    .breadcrumb::after { position: static; display: block; margin-top: 6px; text-align: right; }
-}
-
 /* BUTTONS + INPUTS */
 input.floatright,
 input.floatright:hover,
@@ -467,6 +445,50 @@ a:hover {
 /* LION + USER AVATAR */
 div#lion_image { opacity: 1; border-radius: 12px !important; overflow: hidden; margin-top: 15px; margin-left: 12px; border: 1px solid var(--line); }
 table#player img { opacity: 1; border-radius: 50% !important; overflow: hidden; border: 1px solid var(--line); }
+
+/* CREDIT TAB */
+
+.credit-tab {
+    position: fixed;
+    left: -175px;
+    top: 45%;
+    width: 210px;
+    z-index: 9999;
+    display: flex;
+    transition: left .3s ease;
+    font-family: inherit;
+}
+
+.credit-tab:hover {
+    left: 0;
+}
+
+.credit-content {
+    width: 175px;
+    padding: 12px;
+    background: rgba(17,23,35,.95);
+    border: 1px solid rgba(127,140,255,.25);
+    border-right: none;
+    color: #d8dcef;
+    font-size: 11px;
+    line-height: 1.6em;
+    backdrop-filter: blur(6px);
+}
+
+.credit-handle {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background: rgba(17,23,35,.95);
+    border: 1px solid rgba(127,140,255,.25);
+    color: #7f8cff;
+    font-size: 10px;
+    letter-spacing: .2em;
+    font-weight: bold;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 767px) {
