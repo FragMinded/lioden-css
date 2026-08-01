@@ -448,46 +448,85 @@ table#player img { opacity: 1; border-radius: 50% !important; overflow: hidden; 
 
 /* CREDIT TAB */
 
-.credit-tab {
-    position: fixed;
-    left: -175px;
-    top: 45%;
-    width: 210px;
-    z-index: 9999;
-    display: flex;
-    transition: left .3s ease;
-    font-family: inherit;
+.credit-tab{
+    position:fixed;
+    top:50%;
+    left:-220px;
+    transform:translateY(-50%);
+    display:flex;
+    z-index:99999;
+    transition:left .28s ease;
+    font-family:inherit;
 }
 
-.credit-tab:hover {
-    left: 0;
+.credit-tab:hover{
+    left:0;
 }
 
-.credit-content {
-    width: 175px;
-    padding: 12px;
-    background: rgba(17,23,35,.95);
-    border: 1px solid rgba(127,140,255,.25);
-    border-right: none;
-    color: #d8dcef;
-    font-size: 11px;
-    line-height: 1.6em;
-    backdrop-filter: blur(6px);
+.credit-content{
+    width:220px;
+    padding:16px;
+
+    background:rgba(17,23,35,.94);
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(127,140,255,.22);
+    border-right:none;
+
+    color:#d8dcef;
+    font-size:11px;
+    line-height:1.7;
+    box-shadow:0 0 18px rgba(127,140,255,.08);
 }
 
-.credit-handle {
-    width: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    background: rgba(17,23,35,.95);
-    border: 1px solid rgba(127,140,255,.25);
-    color: #7f8cff;
-    font-size: 10px;
-    letter-spacing: .2em;
-    font-weight: bold;
+.credit-content strong{
+    display:block;
+    margin-bottom:10px;
+    color:#ffffff;
+    font-size:13px;
+    letter-spacing:.08em;
+}
+
+.credit-section{
+    margin-top:10px;
+}
+
+.credit-label{
+    color:#7f8cff;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:10px;
+}
+
+.credit-handle{
+
+    width:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(17,23,35,.94);
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(127,140,255,.22);
+    border-left:none;
+
+    color:#7f8cff;
+
+    writing-mode:vertical-rl;
+    text-orientation:mixed;
+
+    letter-spacing:.25em;
+    font-size:10px;
+    font-weight:bold;
+
+    user-select:none;
+}
+
+.credit-tab:hover .credit-handle{
+    color:#c6d0ff;
 }
 
 /* MOBILE */
