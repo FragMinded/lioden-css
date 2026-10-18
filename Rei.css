@@ -597,6 +597,10 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* CAVE / MOUND IMAGES */
 
+.cave-grid img,
+.mound-grid img {
+    content: url('https://i.postimg.cc/TTc94wmF/Cave.png') !important;
+}
 
 /* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
 
