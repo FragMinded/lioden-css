@@ -1,0 +1,695 @@
+/*
+Free to use CSS template by Katie (#106445).
+This code may be altered, edited, or re-uploaded. 
+This template may be used to create paid codes (pre-mades and commissions).
+Please do NOT remove this credit, unless your coding becomes unrecognizable from this one! 
+*/
+
+/* FONT (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:wght@400;500;600;700&display=swap');
+
+/* BACKGROUND */
+
+body {
+	background: radial-gradient(ellipse 72% 58% at 50% 48%, #34253f 0%, #281b33 22%, #1b1424 47%, #100d17 73%, #08070c 100%) fixed;
+	background-size: cover;
+	font-family: 'Spectral', Georgia, serif;
+	color: #e8e4d8
+}
+
+/* MAIN PANEL */
+
+/* RIGHT SIDE */
+.container.main {
+	background: rgba(37, 31, 44, 0.88);
+	border: none;
+	box-shadow: none;
+	border-radius: 0px
+}
+
+/* LEFT SIDE */
+.col-md-9 {
+	background: none;
+        border-right: none
+}
+
+/* TOPBAR ("Welcome back, ___") */
+
+.topbar {
+	background: rgba(37, 31, 44, 0.88);
+	border: none;
+	border-top: none;
+	color: #e8e4d8;
+	border-radius: 0px;
+}
+
+/* NAVBAR (Den/Crossroads/Etc.) */
+
+.navbar {
+	background: rgba(37, 31, 44, 0.88);
+	border-bottom: none;
+	color: #e8e4d8;
+	border-radius: 0px
+}
+
+/* NAVBAR BUTTON TEXT COLOR */
+
+.navbar li a {
+	color: #e8e4d8 !important
+}
+
+/* NAVBAR BUTTON HOVER */
+
+.navbar li a:hover {
+	background: rgba(37, 31, 44, 0.88) !important;
+	border-bottom: none;
+	color: #e8e4d8 !important;
+	border-radius: 0px
+}
+
+/* BREADCRUMB (Home / Den) */
+
+.breadcrumb {
+	background: rgba(37, 31, 44, 0.88) !important;
+        border: none;
+	border-radius: 0px
+}
+
+/* BREADCRUMB TEXT */
+
+.breadcrumb .active {
+	color: #e8e4d8
+}
+
+/* CSS CREDIT */
+
+.breadcrumb::after {
+        content: "Template by Katie (#106445) - Design by Ko (#416741)";
+        color: #e8e4d8;
+        position: absolute;
+        right: 13%; /* (This may need adjusting) */
+        z-index: 100
+    }
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%
+        }
+    }
+
+/* BOOKMARK BUTTON */
+
+input.floatright, input.floatright:hover {
+	background: rgba(37, 31, 44, 0.88) !important;
+        border: none !important;
+	border-radius: 0px;
+	color: #e8e4d8 !important;    
+}
+
+/* SWITCH ACCOUNT BUTTON */
+
+button.button, button.button:hover {
+	background: rgba(37, 31, 44, 0.88);
+        border: none !important;
+	border-radius: 0px;
+        text-shadow: none !important;
+	color: #e8e4d8 !important
+}
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+	background: rgba(37, 31, 44, 0.88) !important;
+	border: none;
+	color: #e8e4d8;
+	border-radius: 0px !important
+}
+
+/* BIGGEST HEADER ("___"'s DEN) */
+
+h1 {
+	color: #e8e4d8;
+	font-size: clamp(32px, 5vw, 66px);
+	text-align: center;
+        font-family: 'Metamorphous', Georgia, serif
+}
+
+
+/* MEDIUM HEADER */
+
+h2 {
+	color: #e8e4d8;
+	font-size: 24px;
+	text-align: center
+}
+
+
+/* SMALL HEADER */
+
+h3 {
+	color: #e8e4d8 !important;
+	font-size: 14px !important
+}
+
+/* RIGHT SIDE PANEL HEADER */
+
+.sidebar h3 {
+	color: #e8e4d8 !important;
+        font-size: 22px !important;
+        font-family: 'Metamorphous', Georgia, serif
+}
+
+/* RIGHT SIDE PANELS */
+.panel {
+	background: rgba(37, 31, 44, 0.88) !important;
+	box-shadow: none !important;
+	border: none !important;
+	color: #e8e4d8 !important;
+	border-radius: 0px
+}
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8 !important;
+	border-radius: 0px !important
+}
+
+/* ENERGY BAR COLOR */
+.progress-bar {
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8 !important;
+	border-radius: 0px !important
+}
+
+/* ENERGY BAR TEXT */
+.progress div {
+	color: #e8e4d8 !important
+}
+
+/* Comment Box */
+
+
+			#commentBox {
+                		background: rgba(37, 31, 44, 0.88);
+				border: 1px solid #625766;
+				border-radius: 10px;
+				padding: 0px;
+				margin-bottom: 5px;
+				height: 300px;
+				overflow: auto;
+			}
+			#makeComment {
+				margin-top: 5px;
+			}
+			#comment {
+				text-align: left;
+				width: 85%;
+			}
+			.comment {
+				width: 100%;
+				text-align: left;
+				padding: 4px 7px;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				gap: 10px;
+			}
+			.comment:nth-child(even) {
+				background-color: rgba(37, 31, 44, 0.88);
+                		color: #e8e4d8
+			}
+            .comment:nth-child(odd) {
+				background-color: rgba(62, 52, 70, 0.88);
+                		color: #e8e4d8
+			}
+			.commentTag {
+				width: 40px; 
+				height: 40px; 
+				border-radius: 4px;
+			}
+			.comment .commentText {
+				flex-grow: 4;
+			}
+			.comment .bad {
+				padding: 2px 7px !important;
+				font-size: 10px !important;
+			}
+
+/* CHAT */
+
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+	background: rgba(37, 31, 44, 0.88) !important;
+        color: #e8e4d8 !important;
+	border: none !important
+}
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+	background: rgba(37, 31, 44, 0.88) !important;
+        color: #e8e4d8 !important;
+	border: none !important
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+	background: rgba(37, 31, 44, 0.88) !important;
+        color: #e8e4d8 !important;
+	border: none !important
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+	color: #e8e4d8 !important;
+}
+
+div#chatMessageContainer {
+	border: none !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	background: rgba(37, 31, 44, 0.88) !important;
+        color: #e8e4d8 !important;
+	border: none !important
+}
+
+/* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
+
+
+/* PANEL BACKGROUND COLOR */
+
+.table {
+	background: rgba(37, 31, 44, 0.88);
+	border: none !important;
+	border-collapse: separate;
+	border-radius: 0px
+}
+
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+
+.top,
+.bottom,
+th {
+	background: rgba(37, 31, 44, 0.88) !important;
+	color: #e8e4d8 !important;
+	border-radius: 0px
+}
+
+td.bottom a {
+        text-decoration: none !important
+}
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+
+.inner-table .left {
+	background: rgba(70, 60, 79, 0.85) !important;
+        color: #e8e4d8;
+	border-radius: 0px
+}
+
+
+/* Color behind the number of all of the things above */
+
+.inner-table .right {
+	background: none;
+	border-radius: 0px !important
+}
+
+td.right {
+	border-radius: 0px !important
+}
+
+/* IGNORE */
+.right_odd {
+	background: none !important
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
+
+.cave-grid,
+.mound-grid {
+	background: rgba(37, 31, 44, 0.88);
+	border: none !important;
+	border-radius: 0px !important
+}
+
+/* FEED ALL, PLAY ALL */
+
+.feature {
+	background: rgba(37, 31, 44, 0.88) !important;
+	color: #e8e4d8 !important;
+	border: 1px solid #e8e4d8 !important;
+	border-radius: 0px !important
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+
+.feature,
+div.left {
+	background: rgba(37, 31, 44, 0.88);
+	border: none;
+	border-radius: 0px !important
+}
+
+/* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
+
+.table .left {
+	background: rgba(37, 31, 44, 0.88);
+        border-radius: 0px
+}
+
+/* Color behind the content of the elements listed above */
+
+input,
+select,
+textarea {
+	background: rgba(37, 31, 44, 0.88) !important;
+	border: none !important;
+	border-radius: 0px !important;
+	color: #e8e4d8 !important;
+	box-shadow: none !important;
+	text-shadow: none !important
+}
+
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+
+.item-header {
+	background: rgba(37, 31, 44, 0.88) !important;
+	color: #e8e4d8  !important;
+	border-radius: 0px !important;
+}
+
+.item {
+	background: rgba(37, 31, 44, 0.88) !important;
+	border: none !important;
+	border-radius: 0px !important
+}
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+
+div.slider.round /* Background */ {
+	background: #e8e4d8 !important
+}
+
+div.slider.round::before /* Circle Part */ {
+	background: #e8e4d8 !important
+}
+
+/* Copyright, Terms of Service, CoC, etc. */
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        color: #e8e4d8 !important;
+        text-shadow: none !important
+}
+
+/* LINK COLOR */
+
+a:link,
+a:visited {
+	color: #b9a3d1 !important
+}
+
+/* LINK HOVER COLOR */
+
+a:hover {
+	color: #b9a3d1 !important
+}
+
+
+/* BOX CONTAINER */
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
+/* BOXES */
+
+.smallbox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 28.4%;
+	overflow: auto
+}
+
+.mediumbox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 43.8%;
+	overflow: auto
+}
+
+.largebox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 90%;
+	overflow: auto
+}
+
+/* HOVER BOXES */
+
+.smallhoverbox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 50px;
+	width: 28.4%;
+	overflow: auto;
+        transition: 3s
+}
+
+.smallhoverbox:hover {
+	height: 150px;
+	width: 28.4%;
+}
+
+.mediumhoverbox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 50px;
+	width: 43.8%;
+	overflow: auto;
+        transition: 3s
+}
+
+.mediumhoverbox:hover {
+	height: 150px;
+	width: 43.8%;
+}
+
+.largehoverbox {
+	float: left;
+	background: rgba(37, 31, 44, 0.88);
+	color: #e8e4d8;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin: 10px;
+	height: 150px;
+	width: 90%;
+	overflow: auto;
+        transition: 3s
+}
+
+.largehoverbox:hover {
+	height: 150px;
+	width: 90%;
+}
+
+/* SCROLL BAR */
+
+/* WIDTH */
+
+::-webkit-scrollbar {
+	width: 10px
+}
+
+
+/* BACKGROUND */
+
+::-webkit-scrollbar-track {
+	background: #b9a3d1
+}
+
+
+/* "THUMB" */
+
+::-webkit-scrollbar-thumb {
+	background: #e8e4d8;
+	border-radius: 0px
+}
+
+
+/* LION AND USER AVATAR OPACITY */
+
+div#lion_image {
+	opacity: 1
+}
+
+table#player img {
+	opacity: 1
+}
+
+
+/* CIRCULAR LION AND USER AVATAR */
+
+div#lion_image {
+	border-radius: 50% !important;
+	overflow: hidden;
+	margin-top: 15px; /* May need adjusting */
+	margin-left: 12px /* May need adjusting */
+}
+
+table#player img {
+	border-radius: 50% !important;
+	overflow: hidden
+}
+
+
+/* LIODEN LOGO REPLACER */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    opacity: 0;
+}
+
+/* CAVE / MOUND IMAGES */
+
+
+/* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
+
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .container.main .hidden-xs { display: block !important; }
+}
+
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
+
+/* REI'S SANCTUARY */
+:root { --rei-green: #80ffae; --rei-bone: #e8e4d8; --rei-stone: #29232f; --rei-edge: #625766; }
+body { min-height: 100vh; }
+.container.main { background: rgba(24, 19, 30, .58); border: 1px solid rgba(98,87,102,.32); border-radius: 3px; }
+.col-md-9 { border-right: 0; }
+.topbar, .breadcrumb { background: rgba(24,19,30,.35) !important; color: var(--rei-bone); }
+.navbar { background: rgba(10,8,15,.14) !important; border: 0; box-shadow: none; }
+.navbar li a { color: var(--rei-green) !important; font-family: 'Metamorphous', Georgia, serif; font-size: 12px; text-shadow: 0 0 5px rgba(128,255,174,.22); transition: color .3s, text-shadow .3s; }
+.navbar li a:hover, .navbar li a:focus { color: #c0ffd5 !important; background: rgba(25,18,33,.3) !important; text-shadow: 0 0 8px rgba(128,255,174,.55); }
+h1, h2, h3, .sidebar h3, .top, .bottom, th, .item-header { color: var(--rei-green) !important; font-family: 'Metamorphous', Georgia, serif; text-shadow: 0 0 5px rgba(128,255,174,.24); }
+h1 { line-height: 1.25; }
+h2 { font-size: 23px; }
+h3 { font-size: 15px !important; }
+.sidebar h3 { font-size: 20px !important; }
+.panel, .cave-grid, .mound-grid, .smallbox, .mediumbox, .largebox, .smallhoverbox, .mediumhoverbox, .largehoverbox, #commentBox, .item, .feature {
+ background: linear-gradient(145deg, rgba(65,55,73,.94), rgba(37,31,44,.95) 48%, rgba(29,24,35,.96)) !important;
+ border: 1px solid rgba(110,98,114,.7) !important;
+ box-shadow: inset 1px 1px 2px rgba(200,186,205,.10), inset -2px -3px 7px rgba(0,0,0,.25) !important;
+ border-radius: 13px !important; color: var(--rei-bone) !important;
+}
+.table, .inner-table, table#player { border-radius: 2px !important; }
+.table { background: rgba(34,28,41,.91); border: 1px solid rgba(98,87,102,.7) !important; }
+.table .top, .table .bottom, .table th, .inner-table .left, .table .left { background: rgba(62,52,70,.88) !important; }
+.table td, .inner-table .right, .table .right { color: var(--rei-bone) !important; }
+.progress { background: #14111b !important; border: 1px solid #51425d; overflow: hidden; }
+.progress-bar { background: linear-gradient(90deg,#3c9261,#80ffae) !important; box-shadow: 0 0 7px rgba(128,255,174,.35); }
+.progress div { color: #f5f4ee !important; text-shadow: 0 1px 2px #08070c; }
+a:link, a:visited { color: #a8f6c2 !important; }
+a:hover, a:focus { color: #d0ffe0 !important; text-shadow: 0 0 5px rgba(128,255,174,.35); }
+input, select, textarea, .alert, .alert-warning, .alert-danger { color: var(--rei-bone) !important; background: rgba(35,28,43,.95) !important; border: 1px solid rgba(98,87,102,.55) !important; }
+.comment:nth-child(odd), .comment:nth-child(even), .s-chat-message:nth-child(odd), .s-chat-message:nth-child(even) { color: var(--rei-bone) !important; }
+::-webkit-scrollbar-track { background: #15111b; }
+::-webkit-scrollbar-thumb { background: #51405f; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #75578d; }
+.breadcrumb::after { color: #c5b7cd; font-family: 'Spectral', Georgia, serif; text-shadow: none; }
+
+/* LUNAR LOGO */
+.navbar-header > a { position: relative; display: inline-block; min-width: 80px; min-height: 76px; }
+.navbar-header > a > img { opacity: 0 !important; }
+.navbar-header > a::before {
+ content: ''; position: absolute; width: 60px; height: 60px; left: 50%; top: 50%; transform: translate(-50%,-50%);
+ border-radius: 50%; background: radial-gradient(circle at 35% 30%,#f4eee7,#c7bed5 68%,#8b7c9b);
+ box-shadow: 0 0 13px rgba(193,175,216,.2); pointer-events: none;
+ animation: rei-moon 48s ease-in-out infinite;
+}
+@keyframes rei-moon {
+ 0%, 15%, 100% { box-shadow: inset 0 0 0 0 #100d17, 0 0 13px rgba(193,175,216,.2); }
+ 30% { box-shadow: inset 30px 0 0 0 #100d17, 0 0 8px rgba(193,175,216,.1); }
+ 47%, 60% { box-shadow: inset 65px 0 0 0 #100d17, 0 0 5px rgba(193,175,216,.1); }
+ 78% { box-shadow: inset -30px 0 0 0 #100d17, 0 0 8px rgba(193,175,216,.1); }
+ 92% { box-shadow: inset 0 0 0 0 #100d17, 0 0 13px rgba(193,175,216,.2); }
+}
+
+/* FALLING PETALS */
+.rei-petals { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+.container.main, .topbar, .navbar { position: relative; z-index: 2; }
+.rei-petal { position: absolute; top: -35px; left: var(--x); width: 11px; height: 16px;
+ background: linear-gradient(140deg,#c4a1dc,#78558e); border-radius: 80% 8% 75% 15%;
+ opacity: 0; animation: rei-petal-fall var(--duration) linear infinite; animation-delay: var(--delay); }
+.rei-petal:nth-child(1) { --x: 8%; --duration: 20s; --delay: -4s; --drift: 45px; --turn: 140deg; }
+.rei-petal:nth-child(2) { --x: 21%; --duration: 25s; --delay: -17s; --drift: -60px; --turn: -110deg; }
+.rei-petal:nth-child(3) { --x: 35%; --duration: 19s; --delay: -12s; --drift: 55px; --turn: 165deg; }
+.rei-petal:nth-child(4) { --x: 49%; --duration: 27s; --delay: -8s; --drift: -42px; --turn: -155deg; }
+.rei-petal:nth-child(5) { --x: 62%; --duration: 22s; --delay: -19s; --drift: 65px; --turn: 120deg; }
+.rei-petal:nth-child(6) { --x: 74%; --duration: 26s; --delay: -2s; --drift: -50px; --turn: -140deg; }
+.rei-petal:nth-child(7) { --x: 87%; --duration: 21s; --delay: -15s; --drift: 40px; --turn: 175deg; }
+.rei-petal:nth-child(8) { --x: 95%; --duration: 28s; --delay: -23s; --drift: -75px; --turn: -125deg; }
+@keyframes rei-petal-fall {
+ 0% { transform: translate3d(0,-20px,0) rotate(0); opacity: 0; }
+ 12% { opacity: .55; }
+ 85% { opacity: .45; }
+ 100% { transform: translate3d(var(--drift),110vh,0) rotate(var(--turn)); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .rei-petal { animation: none !important; display: none; }
+ .navbar-header > a::before { animation: none !important; }
+}
