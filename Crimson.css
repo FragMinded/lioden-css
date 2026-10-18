@@ -683,39 +683,20 @@ table#player img {
 	overflow: hidden
 }
 
+/* LIODEN LOGO - INVISIBLE BUT CLICKABLE */
 
-/* CSS-only crimson butterfly, using Katie's existing navbar logo area. */
 .navbar-header > a {
     position: relative;
     display: inline-block;
     width: 110px;
     height: 62px;
+    background: transparent !important;
 }
-.navbar-header > a > img { opacity: 0 !important; width: 110px; height: 62px; }
-.navbar-header > a::before, .navbar-header > a::after {
-    content: '';
-    position: absolute;
-    top: 13px;
-    width: 44px;
-    height: 39px;
-    pointer-events: none;
-    background: radial-gradient(ellipse at 65% 65%, #ef4a5d, #b20e2a 47%, #3b0615);
-    box-shadow: 0 0 10px rgba(188,18,51,.4);
-    transition: filter .4s ease, box-shadow .4s ease;
-}
-.navbar-header > a::before {
-    left: 9px;
-    border-radius: 75% 28% 75% 22%;
-    transform: rotate(18deg);
-}
-.navbar-header > a::after {
-    right: 9px;
-    border-radius: 28% 75% 22% 75%;
-    transform: rotate(-18deg);
-}
-.navbar-header > a:hover::before, .navbar-header > a:hover::after {
-    filter: brightness(1.3);
-    box-shadow: 0 0 18px rgba(239,35,70,.8);
+
+.navbar-header > a > img {
+    opacity: 0 !important;
+    width: 110px;
+    height: 62px;
 }
 
 /* LIODEN LOGO REPLACER */
