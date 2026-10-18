@@ -697,3 +697,102 @@ input, select, textarea, .alert, .alert-warning, .alert-danger { color: var(--re
  .rei-petal { animation: none !important; display: none; }
  .navbar-header > a::before { animation: none !important; }
 }
+
+
+/* REI'S SANCTUARY | EXPANDING SCROLL BOXES */
+
+.rei-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.rei-expand-box {
+    flex: 1 1 240px;
+    min-width: 0;
+    height: 85px;
+    max-height: 85px;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    overflow: hidden;
+
+    background: linear-gradient(
+        145deg,
+        #403747 0%,
+        #29232F 50%,
+        #17131E 100%
+    );
+
+    border: 1px solid #625766;
+    border-radius: 12px;
+    color: #E8E4D8;
+    font-family: 'Spectral', serif;
+
+    box-shadow: inset 0 1px 3px rgba(255,255,255,.05),
+                0 4px 12px rgba(0,0,0,.3);
+
+    transition: height .45s ease,
+                max-height .45s ease,
+                border-color .3s ease,
+                box-shadow .3s ease;
+}
+
+.rei-expand-box:hover,
+.rei-expand-box:focus-within {
+    height: 300px;
+    max-height: 300px;
+    border-color: #80FFAE;
+    box-shadow: 0 0 15px rgba(128,255,174,.12),
+                0 8px 20px rgba(0,0,0,.4);
+}
+
+.rei-expand-box h3 {
+    font-family: 'Metamorphous', serif;
+    color: #80FFAE;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 14px;
+}
+
+.rei-box-content {
+    height: calc(100% - 35px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #625766 #17131E;
+}
+
+.rei-box-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.rei-box-content::-webkit-scrollbar-thumb {
+    background: #625766;
+    border-radius: 6px;
+}
+
+.rei-box-content::-webkit-scrollbar-track {
+    background: #17131E;
+}
+
+@media (max-width: 600px) {
+    .rei-box-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rei-expand-box {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rei-expand-box {
+        transition: none;
+    }
+}
+
